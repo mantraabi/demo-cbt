@@ -124,8 +124,24 @@ onMounted(() => {
                 <span v-if="authStore.loading">Memeriksa...</span>
                 <span v-else>Masuk ke Sistem</span>
               </Button>
-              
-            </div>
+
+              <div class="mt-2 p-4 bg-blue-50/80 border border-blue-100 rounded-xl text-sm">
+                <div class="flex items-center gap-2 font-semibold text-blue-800 mb-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  Informasi Akun Demo CBT
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                  <div class="bg-white p-2.5 rounded-lg border border-blue-100 shadow-sm flex flex-col justify-center text-center">
+                    <span class="block text-[10px] text-blue-600 font-bold uppercase tracking-wider mb-1">Akses Admin</span>
+                    <span class="block font-mono text-slate-700 text-xs">admin<br>admin123</span>
+                  </div>
+                  <div class="bg-white p-2.5 rounded-lg border border-blue-100 shadow-sm flex flex-col justify-center text-center">
+                    <span class="block text-[10px] text-emerald-600 font-bold uppercase tracking-wider mb-1">Akses Siswa</span>
+                    <span class="block font-mono text-slate-700 text-xs">500010<br>123456</span>
+                  </div>
+                </div>
+              </div>
+              </div>
           </form>
 
           <div class="bg-slate-100 relative hidden md:block">
